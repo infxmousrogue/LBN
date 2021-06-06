@@ -171,10 +171,10 @@
 
 
 
-        if (currentSlide == 15) {
-            showSlide(5);
-            alreadyNext = true;
-        }
+        // if (currentSlide == 15) {
+        //     showSlide(5);
+        //     alreadyNext = true;
+        // }
 
         if (teller > 0 && currentSlide === 7) {
             showSlide(16);
