@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+
+.onderste {
+    padding-top: 22%;
+}
+
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
