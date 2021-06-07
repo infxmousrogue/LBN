@@ -73,42 +73,42 @@
 
 
             }
-            // // if answer is wrong or blank
-            // else if (userAnswer === currentQuestion.FCPunten1) {
-            //     // color the answers red
-            //     fcpuntentelling = fcpuntentelling + 1;
+            // if answer is wrong or blank
+            else if (userAnswer === currentQuestion.FCPunten1) {
+                // color the answers red
+                fcpuntentelling = fcpuntentelling + 1;
 
-            // }
+            }
 
-            // // if answer is correct
-            // if (userAnswer === currentQuestion.GTTPunten3) {
-            //     // add to the number of correct answers
-            //     gttpuntentelling = gttpuntentelling + 3;
+            // if answer is correct
+            if (userAnswer === currentQuestion.GTTPunten3) {
+                // add to the number of correct answers
+                gttpuntentelling = gttpuntentelling + 3;
 
-            //     // color the answers green
+                // color the answers green
 
-            // }
-            // // if answer is wrong or blank
-            // else if (userAnswer === currentQuestion.GTTPunten1) {
-            //     // color the answers red
-            //     gttpuntentelling = gttpuntentelling + 1;
+            }
+            // if answer is wrong or blank
+            else if (userAnswer === currentQuestion.GTTPunten1) {
+                // color the answers red
+                gttpuntentelling = gttpuntentelling + 1;
 
-            // }
+            }
 
-            // // if answer is correct
-            // if (userAnswer === currentQuestion.MTTPunten3) {
-            //     // add to the number of correct answers
-            //     mttpuntentelling = mttpuntentelling + 3;
+            // if answer is correct
+            if (userAnswer === currentQuestion.MTTPunten3) {
+                // add to the number of correct answers
+                mttpuntentelling = mttpuntentelling + 3;
 
-            //     // color the answers green
+                // color the answers green
 
-            // }
-            // // if answer is wrong or blank
-            // else if (userAnswer === currentQuestion.MTTPunten1) {
-            //     // color the answers red
-            //     mttpuntentelling = mttpuntentelling + 1;
+            }
+            // if answer is wrong or blank
+            else if (userAnswer === currentQuestion.MTTPunten1) {
+                // color the answers red
+                mttpuntentelling = mttpuntentelling + 1;
 
-            // }
+            }
 
 
 
@@ -154,30 +154,17 @@
 
 
         const answerContainers = quizContainer.querySelectorAll('.answers');
-
         // find selected answer
         const answerContainer = answerContainers[4];
         const selector = `input[name=question${4}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
 
+
+
         if (currentSlide === 4 && userAnswer === "a") {
             showSlide(8);
 
-            alreadyNext = true;
-        } else {
-
-        }
-
-
-
-        // if (currentSlide == 15) {
-        //     showSlide(5);
-        //     alreadyNext = true;
-        // }
-
-        if (teller > 0 && currentSlide === 7) {
-            showSlide(16);
             alreadyNext = true;
         }
 
@@ -188,9 +175,6 @@
             showSlide(12);
             alreadyNext = true;
         }
-
-
-
 
         if (alreadyNext === false) {
             showSlide(currentSlide + 1)
@@ -216,7 +200,11 @@
                 e: "Ik wil de collaboratie tussen het bedrijf en de vervoerders automatiseren"
             },
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "1. Maakt u al gebruik van SAP-oplossingen?",
@@ -226,7 +214,11 @@
                 c: "Ja en nee"
             },
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "2. Van welke SAP-oplossingen maakt u gebruik?",
@@ -237,7 +229,11 @@
                 d: "SAP S/4HANA "
             },
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "3. Van welke non-SAP systemen maakt u gebruik?",
@@ -248,7 +244,11 @@
                 d: "SAP S/4HANA "
             },
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "4. Op welk niveau wilt u goederen in uw supply chain tracken??",
@@ -258,7 +258,11 @@
                 c: "FC"
             },
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "5. Ik wil middels de oplossing de contracten en facturatie regelen",
@@ -268,7 +272,11 @@
                 c: "Oneens"
             },
             FCPunten3: "a",
-            FCPunten1: "b"
+            FCPunten1: "b",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -280,7 +288,11 @@
             },
 
             FCPunten3: "a",
-            FCPunten1: "b"
+            FCPunten1: "b",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -291,7 +303,11 @@
                 c: "Oneens"
             },
             FCPunten3: "a",
-            FCPunten1: "b"
+            FCPunten1: "b",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -302,7 +318,11 @@
                 c: "Oneens"
             },
             FCPunten3: "a",
-            FCPunten1: "b"
+            FCPunten1: "b",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -316,7 +336,9 @@
             GTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -330,7 +352,9 @@
             GTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -344,7 +368,9 @@
             GTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -358,7 +384,9 @@
             GTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
 
         },
@@ -373,7 +401,9 @@
             GTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -387,7 +417,9 @@
             MTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z"
 
         },
         {
@@ -401,7 +433,9 @@
             MTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z"
 
         },
         {
@@ -415,7 +449,9 @@
             MTTPunten1: "b",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z"
 
 
         },
@@ -429,7 +465,11 @@
             nulPunten: "c",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
@@ -442,7 +482,11 @@
             nulPunten: "c",
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         },
         {
             question: "19. Hoe wil u dan vervoerders selecteren?",
@@ -451,10 +495,14 @@
                 b: "Neutraal",
                 c: "Oneens"
             },
-            nulPunten: "c",
+
 
             FCPunten3: "z",
-            FCPunten1: "z"
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
         }
 
 
