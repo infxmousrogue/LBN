@@ -121,11 +121,13 @@
             var adviesSectie = document.getElementById("advies");
             var vragenSectie = document.getElementById("vragensectie");
             var salesSectie = document.getElementById("salesSectie")
-            var buttons = document.getElementById("aButtons")
+            var buttons = document.getElementById("footer")
+            var buttons2 = document.getElementById("aButtons")
             adviesSectie.style.display = "block";
             salesSectie.style.display = "block";
             vragenSectie.style.display = "none";
             buttons.style.display = "none";
+            buttons2.style.display = "none";
 
 
 
