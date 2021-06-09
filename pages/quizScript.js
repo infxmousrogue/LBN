@@ -1,4 +1,6 @@
 (function() {
+
+
     // Functions
     function buildQuiz() {
         // variable to store the HTML output
@@ -17,7 +19,7 @@
                     // ...add an HTML radio button
                     answers.push(
                         `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
+                <input type="radio" class="x-radio" name="question${questionNumber}" value="${letter}">
                 ${letter} :
                 ${currentQuestion.answers[letter]}
               </label>`
@@ -29,12 +31,14 @@
                     `<div class="slide">
                     <blockquote class="bg-primary-alt question">
                     <div class="h3 mb-2">${currentQuestion.question}</div>
-
+                    
 
                     </a>
                 </blockquote>
               <div class="answers"> ${answers.join("")} </div>
-            </div>`
+   
+            </div>
+           `
                 );
             }
         );
@@ -46,6 +50,8 @@
     // getElementById("teller").style.display = "none"
 
     function showResults() {
+
+
 
         // gather answer containers from our quiz
         const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -112,8 +118,10 @@
 
 
 
-
-
+            var adviesSectie = document.getElementById("advies");
+            var vragenSectie = document.getElementById("vragensectie");
+            adviesSectie.style.display = "block";
+            vragenSectie.style.display = "none";
 
         });
 
