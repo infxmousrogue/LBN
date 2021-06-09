@@ -19,7 +19,7 @@
                     // ...add an HTML radio button
                     answers.push(
                         `<label>
-                <input type="radio" class="x-radio" name="question${questionNumber}" value="${letter}">
+                <input type="radio"   class="x-radio" name="question${questionNumber}" value="${letter}">
                 ${letter} :
                 ${currentQuestion.answers[letter]}
               </label>`
@@ -28,7 +28,7 @@
 
                 // add this question and its answers to the output
                 output.push(
-                    `<div class="slide">
+                    `<div class="slide" >
                     <blockquote class="bg-primary-alt question">
                     <div class="h3 mb-2">${currentQuestion.question}</div>
                     
@@ -120,15 +120,23 @@
 
             var adviesSectie = document.getElementById("advies");
             var vragenSectie = document.getElementById("vragensectie");
+            var salesSectie = document.getElementById("salesSectie")
             adviesSectie.style.display = "block";
+            salesSectie.style.display = "block";
             vragenSectie.style.display = "none";
 
+            document.getElementById("Advice").innerText = "Het advies";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+            submitButton.style.display = 'none';
         });
 
         // show number of correct answers out of total
 
 
-        document.getElementById("vragenResultaat").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+
+
     }
 
     function showSlide(n) {
