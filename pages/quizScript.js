@@ -257,7 +257,7 @@
 
 
         var alreadyNext = false
-
+        var process = document.getElementById("process");
 
 
         const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -266,6 +266,28 @@
         const selector = `input[name=question${4}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
+
+
+        if (currentSlide > 3) {
+            document.getElementById("process").innerText = "Freight Collaboration";
+            process.style.display = "inline-block";
+
+        }
+        if (currentSlide > 6) {
+            document.getElementById("process").innerText = "Global Track & Trace";
+            process.style.display = "inline-block";
+
+        }
+
+        if (currentSlide > 11) {
+            document.getElementById("process").innerText = "Material Traceability";
+            process.style.display = "inline-block";
+
+        }
+
+        if (currentSlide < 4 || currentSlide > 15) {
+            process.style.display = "none";
+        }
 
 
 
