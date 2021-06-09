@@ -121,18 +121,24 @@
             var adviesSectie = document.getElementById("advies");
             var vragenSectie = document.getElementById("vragensectie");
             var salesSectie = document.getElementById("salesSectie")
+            var buttons = document.getElementById("aButtons")
             adviesSectie.style.display = "block";
             salesSectie.style.display = "block";
             vragenSectie.style.display = "none";
+            buttons.style.display = "none";
 
-            document.getElementById("Advice").innerText = "Het advies";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
 
-            submitButton.style.display = 'none';
+
         });
 
         // show number of correct answers out of total
+        if (fcpuntentelling > 8 && gttpuntentelling > 11 && mttpuntentelling > 8) {
+            document.getElementById("Advice").innerText = "Bedankt voor het invullen van de matrix! Uit de matrix blijkt dat SAP Logistics Business Network in zijn geheel perfect aansluit bij uw wensen. Hierdoor krijgt u alle mogelijkheden en kunt u uw hele Supply Chain inzichtelijk maken. Wij zouden u erg goed kunnen helpen bij dit traject dus neem voor vragen vooral contact met ons op! Neem voor vragen contact op met Bart de Bijl. ";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
 
+        } else {
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        }
 
 
 
@@ -333,10 +339,10 @@
                 b: "Neutraal",
                 c: "Oneens"
             },
-            FCPunten3: "a",
-            FCPunten1: "b",
-            GTTPunten3: "z",
-            GTTPunten1: "z",
+            FCPunten3: "z",
+            FCPunten1: "z",
+            GTTPunten3: "a",
+            GTTPunten1: "b",
             MTTPunten3: "z",
             MTTPunten1: "z"
 
@@ -413,13 +419,13 @@
                 b: "Neutraal",
                 c: "Oneens"
             },
-            GTTPunten3: "a",
-            GTTPunten1: "b",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
 
             FCPunten3: "z",
             FCPunten1: "z",
-            MTTPunten3: "z",
-            MTTPunten1: "z"
+            MTTPunten3: "a",
+            MTTPunten1: "b"
 
         },
         {
@@ -461,8 +467,8 @@
                 b: "Nee",
                 c: "Nog niet, wil hier wel naartoe"
             },
-            MTTPunten3: "a",
-            MTTPunten1: "b",
+            MTTPunten3: "z",
+            MTTPunten1: "z",
 
             FCPunten3: "z",
             FCPunten1: "z",
