@@ -258,6 +258,7 @@
 
         var alreadyNext = false
         var process = document.getElementById("process");
+        var headerTekst = document.getElementById("headerTekstClass");
 
 
         const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -268,25 +269,42 @@
 
 
 
+        if (currentSlide == 4 || currentSlide == 7 || currentSlide == 12) {
+            document.getElementById("headerTekstClass").style.display = "block";
+        } else {
+            document.getElementById("headerTekstClass").style.display = "none";
+        }
+
+
         if (currentSlide > 3) {
             document.getElementById("process").innerText = "Freight Collaboration";
+            document.getElementById("headerTekst").innerText = "Freight collaboration is een van de opties binnen SAP LBN. Freight collaboration regelt alles rondom de contracten en facturatie binnen SAP LBN. Hier kun je opdrachten uitzetten binnen een netwerk van vervoerders welke zich dan aan kunnen melden op de opdracht. Hiermee wordt het gehele proces van contract tot de facturatie gedaan door SAP LBN. Ook zit hier een gestandaardiseerde vorm van het tracken van je goederen bij inbegrepen. ";
             process.style.display = "inline-block";
 
+
         }
+
+
         if (currentSlide > 6) {
             document.getElementById("process").innerText = "Global Track & Trace";
+            document.getElementById("headerTekst").innerText = "Binnen SAP LBN is Global Track & Trace de tweede optie die je kan afnemen. Deze optie focust zich volledig op het tracken & tracen van je goederen. Hiermee kun je heel je supply chain inzichtelijk krijgen en exact zien waar uw producten zijn geweest en zich nu bevinden (real-time).";
             process.style.display = "inline-block";
+            headerTekst.style.direction = "block";
 
         }
+
 
         if (currentSlide > 11) {
             document.getElementById("process").innerText = "Material Traceability";
+            document.getElementById("headerTekst").innerText = "De derde en laatste optie van SAP LBN is Material Traceability. Deze optie zorgt voor het delen van data over de gehele supply chain. Hiermee kan je bijvoorbeeld aantonen dat een vis in een duurzame omgeving gevangen is.";
             process.style.display = "inline-block";
+            headerTekst.style.direction = "block";
 
         }
 
         if (currentSlide < 4 || currentSlide > 15) {
             process.style.display = "none";
+            headerTekst.style.direction = "none";
         }
 
 
@@ -509,9 +527,8 @@
                 b: "Informatie updates sturen naar aanleiding van vertragingen of versnellingen in de Supply Chain ",
                 c: "Ik wil dat event updates worden doorgestuurd naar de klant "
             },
-            GTTPunten3: "a",
-            GTTPunten1: "b",
-
+            GTTPunten3: "z",
+            GTTPunten1: "z",
             FCPunten3: "z",
             FCPunten1: "z",
             MTTPunten3: "z",

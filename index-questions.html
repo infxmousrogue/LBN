@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vragenlijst McCoy">
     <link href="pages/assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="pages/assets/css/theme-saas-trend.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="pages/assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="pages/assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="pages/assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
 </head>
@@ -42,24 +42,115 @@
 
         </section>
 
-        <section class="bg-primary text-light o-hidden footer">
-            <div class="container">
-                <div class="row align-items-center min-vh-50">
-                    <div class="col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
-                        <h1 class="display-3">LBN-Matrix</h1>
-                        <div class="my-4">
-                            <p class="lead">Je bent geïnteresseerd in SAP LBN maar weet niet welke opties voor jou als bedrijf relevant zijn? Dan is de LBN-identificatie matrix geschikt voor jou, middels deze matrix kunnen wij u vertellen welke opties van SAP LBN bij
-                                uw bedrijf passen!
+
+        <section id="headerTekstClass" class=" bg-primary-alt" style="display : none" data-aos="fade-up">
+            <div class="container  " data-aos="fade-up" data-aos="fade-up">
+                <div class="row align-items-center justify-content-around">
+
+                    <div class="row justify-content-center">
+                        <div class="col-xl-7 col-lg-8 col-md-10">
+
+
+                            <p class="lead" id="headerTekst">
+                                Je bent geïnteresseerd in SAP LBN maar weet niet welke opties voor jou als bedrijf relevant zijn? Dan is de LBN-identificatie matrix geschikt voor jou, middels deze matrix kunnen wij u vertellen welke opties van SAP LBN bij uw bedrijf passen!
                             </p>
+
                         </div>
-                        <a href="index-questions.html" class="btn btn-lg btn-primary-2">Start Matrix!</a>
                     </div>
-                    <div class="col-lg-6 text-center aos-init aos-animate" data-aos="fade-left">
-                        <img src="pages/assets/img/saas-sketch-1.svg" alt="Image" class="min-vw-60">
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="advies" style="display : none" data-aos="fade-up">
+            <div class="container" data-aos="fade-up" data-aos="fade-up">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-md-5 col-xl-6 mb-4 mb-md-0">
+                        <img src="pages/SCE.png" alt="Image" class="rounded shadow-3d" data-aos="fade-up">
+                    </div>
+                    <div class="col-md-7 col-xl-6">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8 col-lg-10">
+                                <span class="badge badge-primary">Advies</span>
+                                <div class="my-3">
+                                    <span id="TitleAdvice" class="h1">Error: xf104-01-01</span>
+                                </div>
+                                <p id="Advice" class="lead">Whoops something went wrong.</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="salesSectie" style="display: none;" data-aos="fade-up" data-aos-delay="500">
+            <div class="container " data-aos="fade-up">
+
+                <div class="row" data-aos="fade-up">
+                    <div class="col-sm-6 col-lg-6 d-flex align-items-center  aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <img src="pages/bart.jpeg" alt="Bart de Bijl" class="avatar avatar-xlg mr-3">
+                        <div>
+                            <h5 class="mb-0">Bart de Bijl</h5>
+                            <span class="badge badge-primary m-1">Sales</span>
+                            <br>
+                            <br>
+                            <span>Mobile: <a>06 11 00 68 99</a> </span>
+                            <br>
+                            <span>Email: <a href="mailto:bart.de.bijl@mccoy-partners.com">bart.de.bijl@mccoy-partners.com</a> </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="vragensectie" data-aos="fade-up" class="p-0">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-10">
+                        <span id="process" style="display: none;" class="badge badge-primary-2 m-1 justify-content-center text-light">Primary 2</span>
+
+                        <article class="article quiz-container">
+
+
+                            <div id="quiz">
+
+
+
+
+                            </div>
+
+
+
+
+                        </article>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div class="actionButtons" id="aButtons">
+
+        </div>
+
 
 
 
@@ -73,7 +164,20 @@
             <img class="icon" src="pages/assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
         </a>
 
+        <footer id="footer">
+            <div class="container" id="aButtons">
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="card card-body border-0 o-hidden mb-0">
+                            <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
 
+                                <button class="m-1 btn btn-primary " data-aos="fade-up" data-aos-delay="350" id="next">Next Question</button>
+                                <button class="m-1 btn btn-primary-2" id="submit">Submit Quiz</button>
+
+                            </div>
+                        </div>
+                    </div>
+        </footer>
 
 
         <!-- Required vendor scripts (Do not remove) -->
@@ -121,7 +225,7 @@
         <script type="text/javascript" src="pages/assets/js/typed.min.js"></script>
         <!-- Required theme scripts (Do not remove) -->
         <script type="text/javascript" src="pages/assets/js/theme.js"></script>
-
+        <script type="text/javascript" src="pages/quizScript.js"></script>
         <!-- Removes page load animation when window is finished loading -->
         <script type="text/javascript">
             window.addEventListener("load", function() {
