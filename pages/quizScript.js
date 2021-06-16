@@ -199,7 +199,7 @@
 
         // FC 5 tm 8 GTT 12
         if (fcpuntentelling > 6 && gttpuntentelling > 11) {
-            document.getElementById("Advice").innerText = "Op basis van de door u ingevulde SAP Logistics Business Network decision matrix kunnenwij zeggen dat SAP Logistics Business Network – Global Track & Trace een zeer geschikte optie is om voor u te gebruiken. Dit bevelen wij aan in combinatie met SAP Logistics Business Network – Freight Collaboration. Als u dit samen afneemt kunt u uw goederenstroom inzichtelijk maken en heeft u de volledige vrijheid en flexibiliteit om zelf tracking scenarios op te stellen. Wij zouden u graag helpen hoe dit binnen uw bedrijf vorm kan krijgen. Voor vragen kunt u terecht bij Bart de Bijl.";
+            document.getElementById("Advice").innerText = "Op basis van de door u ingevulde SAP Logistics Business Network decision matrix kunnen wij zeggen dat SAP Logistics Business Network – Global Track & Trace een zeer geschikte optie is om voor u te gebruiken. Dit bevelen wij aan in combinatie met SAP Logistics Business Network – Freight Collaboration. Als u dit samen afneemt kunt u uw goederenstroom inzichtelijk maken en heeft u de volledige vrijheid en flexibiliteit om zelf tracking scenarios op te stellen. Wij zouden u graag helpen hoe dit binnen uw bedrijf vorm kan krijgen. Voor vragen kunt u terecht bij Bart de Bijl.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
 
         }
@@ -566,12 +566,12 @@
 
             FCPunten3: "z",
             FCPunten1: "z",
-            MTTPunten3: "a",
-            MTTPunten1: "b"
+            MTTPunten3: "z",
+            MTTPunten1: "z"
 
         },
         {
-            question: "14. Ik wil alle stappen in het supply chain proces vast te leggen in de blockchain zodat eindgebruikers kunnen zien of het product duurzaam is ontwikkeld",
+            question: "14. Ik wil alle stappen in het supply chain proces vastleggen in de blockchain zodat eindgebruikers kunnen zien of het product duurzaam is ontwikkeld",
             answers: {
                 a: "Eens",
                 b: "Neutraal ",
