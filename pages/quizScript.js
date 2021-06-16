@@ -47,11 +47,11 @@
         quizContainer.innerHTML = output.join('');
     }
 
-    // getElementById("teller").style.display = "none"
+
 
     function showResults() {
 
-
+        var progress = document.getElementById("progressContainer").style.display = "none";
 
         // gather answer containers from our quiz
         const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -256,6 +256,15 @@
     function showNextSlide() {
 
 
+        //SetProgress
+        var progress = document.getElementById("progress").getAttribute("aria-valuenow");
+        progress = parseFloat(progress) + 5;
+
+        document.getElementById("progress").setAttribute("style", "width: " + progress + "%");
+        document.getElementById("progress").setAttribute("aria-valuenow", String(progress));
+
+
+
         var alreadyNext = false
         var process = document.getElementById("process");
         var headerTekst = document.getElementById("headerTekstClass");
@@ -271,12 +280,19 @@
 
         if (currentSlide == 4 || currentSlide == 7 || currentSlide == 12) {
             document.getElementById("headerTekstClass").style.display = "block";
+            document.getElementById("next").setAttribute("data-toggle", "modal");
+            document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
         } else {
             document.getElementById("headerTekstClass").style.display = "none";
+            document.getElementById("next").setAttribute("data-toggle", "0");
+            document.getElementById("next").setAttribute("data-target", "0");
         }
 
 
         if (currentSlide > 3) {
+
+
+            document.getElementById("headerTekstClass").innerText = "Freight Collaboration";
             document.getElementById("process").innerText = "Freight Collaboration";
             document.getElementById("headerTekst").innerText = "Freight collaboration is een van de opties binnen SAP LBN. Freight collaboration regelt alles rondom de contracten en facturatie binnen SAP LBN. Hier kun je opdrachten uitzetten binnen een netwerk van vervoerders welke zich dan aan kunnen melden op de opdracht. Hiermee wordt het gehele proces van contract tot de facturatie gedaan door SAP LBN. Ook zit hier een gestandaardiseerde vorm van het tracken van je goederen bij inbegrepen. ";
             process.style.display = "inline-block";
@@ -286,6 +302,7 @@
 
 
         if (currentSlide > 6) {
+            document.getElementById("headerTekstClass").innerText = "Global Track & Trace";
             document.getElementById("process").innerText = "Global Track & Trace";
             document.getElementById("headerTekst").innerText = "Binnen SAP LBN is Global Track & Trace de tweede optie die je kan afnemen. Deze optie focust zich volledig op het tracken & tracen van je goederen. Hiermee kun je heel je supply chain inzichtelijk krijgen en exact zien waar uw producten zijn geweest en zich nu bevinden (real-time).";
             process.style.display = "inline-block";
@@ -295,6 +312,7 @@
 
 
         if (currentSlide > 11) {
+            document.getElementById("headerTekstClass").innerText = "Material Traceability";
             document.getElementById("process").innerText = "Material Traceability";
             document.getElementById("headerTekst").innerText = "De derde en laatste optie van SAP LBN is Material Traceability. Deze optie zorgt voor het delen van data over de gehele supply chain. Hiermee kan je bijvoorbeeld aantonen dat een vis in een duurzame omgeving gevangen is.";
             process.style.display = "inline-block";
@@ -651,153 +669,6 @@
             MTTPunten1: "z"
         }
 
-
-
-    ];
-
-    const freightQuestions = [{
-            question: "5. Ik wil middels de oplossing de contracten en facturatie regelen",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "6. Ik wil dat carriers zelf een afspraak kunnen inplannen om de goederen op te halen of af te leveren ",
-            answers: {
-                a: "Eens",
-                b: "Neutraal ",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "7. Ik wil gemaakte logistieke kosten automatisch kunnen koppelen aan een project zodat overzichtelijk blijft hoeveel kosten er gemaakt worden per project ",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        }
-
-
-    ];
-
-    const GlobalTandT = [{
-            question: "8. Ik wil de flexibiliteit om zelf tracking scenario’s te kunnen uitwerken ",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "9. Ik wil documenten (zoals in welke container de goederen op een schip staan) kunnen koppelen aan de opdracht (sales order, purchase order etc)",
-            answers: {
-                a: "Eens",
-                b: "Neutraal ",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "10. Ik wil zien wat voor effect supply chain gebeurtenissen hebben op mijn verschillende shipments ",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "11. Ik wil de stakeholders notificeren over veranderingen in het proces",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "12. Hoe wil u de stakeholders notificeren van verandering in het proces?",
-            answers: {
-                a: "Ze een tracking link sturen zodat ze de order zelf kunnen volgen ",
-                b: "Informatie updates sturen naar aanleiding van vertragingen of versnellingen in de Supply Chain ",
-                c: "Ik wil dat event updates worden doorgestuurd naar de klant "
-            },
-            correctAnswer: "c"
-        },
-    ];
-
-    const MaterialTr = [{
-            question: "13. Ik wil bijhouden waar elk(e) grondstof, dier, vis of ingrediënt vandaan komt ",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "14. Ik wil alle stappen in het supply chain proces vast te leggen in de blockchain zodat eindgebruikers kunnen zien of het product duurzaam is ontwikkeld",
-            answers: {
-                a: "Eens",
-                b: "Neutraal ",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "15. Ik wil voor mijn klanten zichtbaarheid creëren van grondstof tot eindproduct",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        }
-    ];
-
-    const eindVragen = [{
-            question: "16. Maakt u nu gebruik van vaste vervoerders? ",
-            answers: {
-                a: "Ja",
-                b: "Nee",
-                c: "Nog niet, wil hier wel naartoe"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "17. Hoe vervoert u nu uw producten?",
-            answers: {
-                a: "Eens",
-                b: "Neutraal ",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "18. Ik wil in de toekomstige situatie gebruik maken van mijn bestaande vervoerders",
-            answers: {
-                a: "Eens",
-                b: "Neutraal ",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        },
-        {
-            question: "19. Hoe wil u dan vervoerders selecteren?",
-            answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
-            },
-            correctAnswer: "c"
-        }
 
 
     ];

@@ -43,27 +43,41 @@
         </section>
 
 
-        <section id="headerTekstClass" class=" bg-primary-alt" style="display : none" data-aos="fade-up">
-            <div class="container  " data-aos="fade-up" data-aos="fade-up">
-                <div class="row align-items-center justify-content-around">
 
-                    <div class="row justify-content-center">
-                        <div class="col-xl-7 col-lg-8 col-md-10">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content modal-content bg-primary border-0 text-light">
 
-
-                            <p class="lead" id="headerTekst">
-                                Je bent geïnteresseerd in SAP LBN maar weet niet welke opties voor jou als bedrijf relevant zijn? Dan is de LBN-identificatie matrix geschikt voor jou, middels deze matrix kunnen wij u vertellen welke opties van SAP LBN bij uw bedrijf passen!
-                            </p>
-
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            </div>
+                            <div class="text-center mb-4">
+                                <h4 id ="headerTekstClass" class="h3">Whoops dit zou u niet moeten zien! Error: 4x129</h4>
+                                
+                                <p class="lead" id="headerTekst" style="padding: 1em;">
+                                    Je bent geïnteresseerd in SAP LBN maar weet niet welke opties voor jou als bedrijf relevant zijn? Dan is de LBN-identificatie matrix geschikt voor jou, middels deze matrix kunnen wij u vertellen welke opties van SAP LBN bij uw bedrijf passen!
+                                </p>
+                                <a href="#" class="btn btn-white" data-dismiss="modal">Verder!</a>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-        </section>
+        </div>
 
 
+        <div class="container" id="progressContainer">
+            <div class="row">
+                <div class="col-xl-11">
+                    <div class="progress mb-3">
+                        <div class="progress-bar" id="progress" style="width: 0%;" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
 
 
         <section id="advies" style="display : none" data-aos="fade-up">
@@ -75,6 +89,7 @@
                     <div class="col-md-7 col-xl-6">
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-10">
+
                                 <span class="badge badge-primary">Advies</span>
                                 <div class="my-3">
                                     <span id="TitleAdvice" class="h1">Error: xf104-01-01</span>
@@ -171,68 +186,68 @@
                         <div class="card card-body border-0 o-hidden mb-0">
                             <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
 
-                                <button class="m-1 btn btn-primary " data-aos="fade-up" data-aos-delay="350" id="next">Next Question</button>
-                                <button class="m-1 btn btn-primary-2" id="submit">Submit Quiz</button>
+                                <button class="m-1 btn btn-primary " data-aos="fade-up" data-aos-delay="350" id="next">Volgende vraag</button>
+                        <button class="m-1 btn btn-primary-2" id="submit">Submit Quiz</button>
 
-                            </div>
-                        </div>
                     </div>
-        </footer>
+                </div>
+            </div>
+            </footer>
 
 
-        <!-- Required vendor scripts (Do not remove) -->
-        <script type="text/javascript" src="pages/assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="pages/assets/js/popper.min.js"></script>
-        <script type="text/javascript" src="pages/assets/js/bootstrap.js"></script>
+            <!-- Required vendor scripts (Do not remove) -->
+            <script type="text/javascript" src="pages/assets/js/jquery.min.js"></script>
+            <script type="text/javascript" src="pages/assets/js/popper.min.js"></script>
+            <script type="text/javascript" src="pages/assets/js/bootstrap.js"></script>
 
-        <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+            <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
-        <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
-        <script type="text/javascript" src="pages/assets/js/aos.js"></script>
-        <!-- Clipboard (copies content from browser into OS clipboard) -->
-        <script type="text/javascript" src="pages/assets/js/clipboard.js"></script>
-        <!-- Fancybox (handles image and video lightbox and galleries) -->
-        <script type="text/javascript" src="pages/assets/js/jquery.fancybox.min.js"></script>
-        <!-- Flatpickr (calendar/date/time picker UI) -->
-        <script type="text/javascript" src="pages/assets/js/flatpickr.min.js"></script>
-        <!-- Flickity (handles touch enabled carousels and sliders) -->
-        <script type="text/javascript" src="pages/assets/js/flickity.pkgd.min.js"></script>
-        <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
-        <script type="text/javascript" src="pages/assets/js/ion.rangeSlider.min.js"></script>
-        <!-- Isotope (masonry layouts and filtering) -->
-        <script type="text/javascript" src="pages/assets/js/isotope.pkgd.min.js"></script>
-        <!-- jarallax (parallax effect and video backgrounds) -->
-        <script type="text/javascript" src="pages/assets/js/jarallax.min.js"></script>
-        <script type="text/javascript" src="pages/assets/js/jarallax-video.min.js"></script>
-        <script type="text/javascript" src="pages/assets/js/jarallax-element.min.js"></script>
-        <!-- jQuery Countdown (displays countdown text to a specified date) -->
-        <script type="text/javascript" src="pages/assets/js/jquery.countdown.min.js"></script>
-        <!-- jQuery smartWizard facilitates steppable wizard content -->
-        <script type="text/javascript" src="pages/assets/js/jquery.smartWizard.min.js"></script>
-        <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
-        <script type="text/javascript" src="pages/assets/js/plyr.polyfilled.min.js"></script>
-        <!-- Prism (displays formatted code boxes) -->
-        <script type="text/javascript" src="pages/assets/js/prism.js"></script>
-        <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
-        <script type="text/javascript" src="pages/assets/js/scrollMonitor.js"></script>
-        <!-- Smooth scroll (animation to links in-page)-->
-        <script type="text/javascript" src="pages/assets/js/smooth-scroll.polyfills.min.js"></script>
-        <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
-        <script type="text/javascript" src="pages/assets/js/svg-injector.umd.production.js"></script>
-        <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
-        <script type="text/javascript" src="pages/assets/js/twitterFetcher_min.js"></script>
-        <!-- Typed text (animated typing effect)-->
-        <script type="text/javascript" src="pages/assets/js/typed.min.js"></script>
-        <!-- Required theme scripts (Do not remove) -->
-        <script type="text/javascript" src="pages/assets/js/theme.js"></script>
-        <script type="text/javascript" src="pages/quizScript.js"></script>
-        <!-- Removes page load animation when window is finished loading -->
-        <script type="text/javascript">
-            window.addEventListener("load", function() {
-                document.querySelector('body').classList.add('loaded');
+            <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+            <script type="text/javascript" src="pages/assets/js/aos.js"></script>
+            <!-- Clipboard (copies content from browser into OS clipboard) -->
+            <script type="text/javascript" src="pages/assets/js/clipboard.js"></script>
+            <!-- Fancybox (handles image and video lightbox and galleries) -->
+            <script type="text/javascript" src="pages/assets/js/jquery.fancybox.min.js"></script>
+            <!-- Flatpickr (calendar/date/time picker UI) -->
+            <script type="text/javascript" src="pages/assets/js/flatpickr.min.js"></script>
+            <!-- Flickity (handles touch enabled carousels and sliders) -->
+            <script type="text/javascript" src="pages/assets/js/flickity.pkgd.min.js"></script>
+            <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+            <script type="text/javascript" src="pages/assets/js/ion.rangeSlider.min.js"></script>
+            <!-- Isotope (masonry layouts and filtering) -->
+            <script type="text/javascript" src="pages/assets/js/isotope.pkgd.min.js"></script>
+            <!-- jarallax (parallax effect and video backgrounds) -->
+            <script type="text/javascript" src="pages/assets/js/jarallax.min.js"></script>
+            <script type="text/javascript" src="pages/assets/js/jarallax-video.min.js"></script>
+            <script type="text/javascript" src="pages/assets/js/jarallax-element.min.js"></script>
+            <!-- jQuery Countdown (displays countdown text to a specified date) -->
+            <script type="text/javascript" src="pages/assets/js/jquery.countdown.min.js"></script>
+            <!-- jQuery smartWizard facilitates steppable wizard content -->
+            <script type="text/javascript" src="pages/assets/js/jquery.smartWizard.min.js"></script>
+            <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+            <script type="text/javascript" src="pages/assets/js/plyr.polyfilled.min.js"></script>
+            <!-- Prism (displays formatted code boxes) -->
+            <script type="text/javascript" src="pages/assets/js/prism.js"></script>
+            <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+            <script type="text/javascript" src="pages/assets/js/scrollMonitor.js"></script>
+            <!-- Smooth scroll (animation to links in-page)-->
+            <script type="text/javascript" src="pages/assets/js/smooth-scroll.polyfills.min.js"></script>
+            <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+            <script type="text/javascript" src="pages/assets/js/svg-injector.umd.production.js"></script>
+            <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+            <script type="text/javascript" src="pages/assets/js/twitterFetcher_min.js"></script>
+            <!-- Typed text (animated typing effect)-->
+            <script type="text/javascript" src="pages/assets/js/typed.min.js"></script>
+            <!-- Required theme scripts (Do not remove) -->
+            <script type="text/javascript" src="pages/assets/js/theme.js"></script>
+            <script type="text/javascript" src="pages/quizScript.js"></script>
+            <!-- Removes page load animation when window is finished loading -->
+            <script type="text/javascript">
+                window.addEventListener("load", function() {
+                    document.querySelector('body').classList.add('loaded');
 
-            });
-        </script>
+                });
+            </script>
 
 </body>
 
