@@ -327,23 +327,23 @@
 
 
 
-        if (currentSlide === 4 && userAnswer === "a") {
-            showSlide(8);
+        // if (currentSlide === 4 && userAnswer === "a") {
+        //     showSlide(8);
 
-            alreadyNext = true;
-        }
+        //     alreadyNext = true;
+        // }
 
-        if (currentSlide === 11 && userAnswer === "c") {
-            showSlide(13);
-            alreadyNext = true;
-        } else if (currentSlide === 11) {
-            showSlide(12);
-            alreadyNext = true;
-        }
+        // if (currentSlide === 11 && userAnswer === "c") {
+        //     showSlide(13);
+        //     alreadyNext = true;
+        // } else if (currentSlide === 11) {
+        //     showSlide(12);
+        //     alreadyNext = true;
+        // }
 
-        if (alreadyNext === false) {
-            showSlide(currentSlide + 1)
-        }
+        // if (alreadyNext === false) {
+        showSlide(currentSlide + 1)
+            // }
 
     }
 
