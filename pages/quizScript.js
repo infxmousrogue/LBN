@@ -375,6 +375,8 @@
     const quizContainer = document.getElementById('quiz');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
+
+    //Questions Array
     const myQuestions = [{
             question: "0. Wat is het doel wat u middels Track & Trace wil bereiken?  ",
             answers: {
@@ -586,8 +588,8 @@
 
             FCPunten3: "z",
             FCPunten1: "z",
-            MTTPunten3: "z",
-            MTTPunten1: "z"
+            MTTPunten3: "a",
+            MTTPunten1: "b"
 
         },
         {
