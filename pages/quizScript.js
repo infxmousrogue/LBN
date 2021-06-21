@@ -133,41 +133,11 @@
 
         });
 
-        // show number of correct answers out of total
 
 
 
-        // A2 - FC 5 tm 8
-        if (fcpuntentelling > 4) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Freight Collaboration past het beste bij uw situatie. De reden hiervoor is omdat u hierdoor gebruik kunt maken van een geautomatiseerde contractafhandeling. De kunst is het naadloos te laten aansluiten op uw huidige IT-landschap. Benieuwd wat daarbij komt kijken? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        // Adviezen met twee condities --------------------------------------------------------------------------------------------
 
-        }
-
-        // A1 - FC 9 
-        if (fcpuntentelling == 9) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Freight Collaboration is voor u een slimme optie. Waarom? Het sluit perfect aan op uw wensen voor contractafhandeling. Benieuwd hoe u het naar uw hand zet voor uw situatie? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        // B2 - GT 8 tm 11
-        if (gttpuntentelling > 7) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace sluit het beste aan bij uw situatie. Waarom? Omdat u hierdoor totale vrijheid heeft om uw eigen scope te bepalen voor Tracken & Tracen van goederen. Benieuwd wat erbij komt kijken om die oplossing vorm te geven binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-        }
-
-        // B1 - GT 12
-        if (gttpuntentelling == 12) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace is een slimme oplossing in uw situatie. U heeft daarmee de vrijheid uw eigen scope te bepalen voor Tracken & Tracen van goederen. De kunst is het naadloos te laten aansluiten op uw IT-landschap. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-        }
-
-        // C2 - MT 5 tm 8
-        if (mttpuntentelling > 4) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is de oplossing voor u. De kunst is dit binnen uw bedrijf verder vorm te geven. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-        }
 
         // D2 - FC 5 tm 8 gtt 7 tm 11
         if (fcpuntentelling > 4 && gttpuntentelling > 6) {
@@ -176,81 +146,18 @@
 
         }
 
-        // D1 - FC 9 gtt 12
-        if (fcpuntentelling > 8 && gttpuntentelling > 11) {
-            document.getElementById("Advice").innerText = "Een combinatie van SAP Logistics Business Network – Freight Collaboration + Global Track & Trace is voor u de slimste optie. U wilt zelf tracking scenario’s opstellen. Door dit te combineren met de geautomatiseerde contracten en facturatie blijft u de concurrenten voor. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        // D3 - FC 9 GTT 7 tm 11
-        if (fcpuntentelling > 8 && gttpuntentelling > 6) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Freight collaboration is voor u een slimme optie. Ons advies: combineer het met SAP Logistics Business Network – Global Track & Trace. Deze oplossing past namelijk ook bij uw wensen om de contracten en facturatie middels SAP Logistics Business Network te regelen. Omdat dit ook aansluit op uw wensen. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
         // D4 - FC 5 tm 8 GTT 12
-        if (fcpuntentelling > 6 && gttpuntentelling > 11) {
+        if (fcpuntentelling > 6 && gttpuntentelling == 12) {
             document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace is voor u een slimme optie. Ons advies: combineer het met SAP Logistics Business Network – Freight Collaboration. U maakt dan uw goederenstroom inzichtelijk én heeft de volledige vrijheid en flexibiliteit om zelf tracking scenario’s te maken. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
 
         }
 
-        // E2 - FC 5 tm 8 gtt 7 tm 11 mtt 5 tm 8
-        if (fcpuntentelling > 4 && gttpuntentelling > 6 && mttpuntentelling > 4) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network sluit als totaaloplossing het beste aan bij uw wensen. Zo kunt u onder andere zelf uw tracking scenario’s opstellen en inzichtelijk krijgen waar uw grondstoffen vandaan komen. Benieuwd welke voordelen het heeft voor de processen binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+        // D3 - FC 9 GTT 7 tm 11
+        if (fcpuntentelling == 9 && gttpuntentelling > 6) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Freight collaboration is voor u een slimme optie. Ons advies: combineer het met SAP Logistics Business Network – Global Track & Trace. Deze oplossing past namelijk ook bij uw wensen om de contracten en facturatie middels SAP Logistics Business Network te regelen. Omdat dit ook aansluit op uw wensen. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
 
-        }
-
-        // F1 Geen SAP LBN FC 4 of minder punten GTT 6 of minder punten en MT 4 of minder punten/ fallback 
-        if (fcpuntentelling < 5 && gttpuntentelling < 7 && mttpuntentelling < 5) {
-            document.getElementById("Advice").innerText = "Bedankt voor het invullen van de matrix. Op basis van uw antwoorden is er niet één doorslaggevende oplossing die eruit springt. We spreken u graag persoonlijk om uw situatie samen scherp te stellen en een maatwerkadvies te geven. Neem contact op met Bart de Bijl voor een vrijblijvend adviesgesprek.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        // E1 Perfect score
-        if (fcpuntentelling > 8 && gttpuntentelling > 11 && mttpuntentelling > 8) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network sluit als totaaloplossing perfect aan bij uw wensen. U krijgt daarmee alle mogelijkheden om uw hele Supply Chain inzichtelijk te maken. De kunst is het naadloos te laten aansluiten op uw huidige IT-landschap. Benieuwd wat daarbij komt kijken? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        //B1 – GTT 12 punten 
-        if (gttpuntentelling == 12) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace is een slimme oplossing in uw situatie. U heeft daarmee de vrijheid uw eigen scope te bepalen voor Tracken & Tracen van goederen. De kunst is het naadloos te laten aansluiten op uw IT-landschap. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-
-        //C1 – MT 9 punten 
-        if (mttpuntentelling == 9) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Material Traceability sluit naadloos aan op uw wensen. U toont met deze oplossing aan waar uw grondstoffen vandaan komen. Benieuwd wat erbij komt kijken om die oplossing vorm te geven binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        //C2 MT 5 t/m 8 punten 
-        if (mttpuntentelling > 4) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is de oplossing voor u. De kunst is dit binnen uw bedrijf verder vorm te geven. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        //D1 – FC (9 punten) & GTT (12 punten) 
-        if (fcpuntentelling == 9 && gttpuntentelling == 12) {
-            document.getElementById("Advice").innerText = "Een combinatie van SAP Logistics Business Network – Freight Collaboration + Global Track & Trace is voor u de slimste optie. U wilt zelf tracking scenario’s opstellen. Door dit te combineren met de geautomatiseerde contracten en facturatie blijft u de concurrenten voor. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-
-        }
-
-        // G1 – FC & MT (9 punten) 
-        if (fcpuntentelling == 9 && mttpuntentelling == 9) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Freight Collaboration & Material Traceability is een slimme optie voor u. Dit sluit aan bij u wensen over de contracten en facturatie. Ook kunt u hierdoor zichtbaarheid creëren voor de consument. Benieuwd hoe u deeze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
         }
 
         // G2 FC & MT 5 t/m 8 punten 
@@ -258,6 +165,13 @@
             document.getElementById("Advice").innerText = "SAP Logistics Business Network – Freight Collaboration & Material Traceability bevelen wij u aan. Hiermee kun u zichtbaarheid creëren voor de eindgebruiker en op een handige manier de kosten afhandelen. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
         }
+
+        // H4 MT 9 punten GTT 7 t/m 11 punten   
+        if (mttpuntentelling == 9 && gttpuntentelling > 6) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is een zeer geschikte optie voor u. Dit kunt u dan gebruiken in combinatie met Global Track & Trace. Bij het gebruik van deze twee oplossingen kunt u uw producten volgen over de gehele goederenstroom. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        }
+
 
         // G3 FC 5 t/m 8 punten MT 9 punten
         if (fcpuntentelling > 4 && mttpuntentelling == 9) {
@@ -277,24 +191,99 @@
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
         }
 
-        // H2 MT 5 t/m 8 punten GTT 7 t/m 11 punten 
-        if (mttpuntentelling == 9 && gttpuntentelling == 12) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is een slimme optie voor u. Ons advies: combineer dit met SAP Logistics Business Network – Global Track & Trace. Middels deze twee oplossingen kunt u uw gehele goederenstroom inzichtelijk krijgen. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
-            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
-        }
-
         // H3 MT 5 t/m 8 punten GTT 12 punten  
         if (mttpuntentelling > 4 && gttpuntentelling == 12) {
             document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace is een zeer geschikte optie voor u. Ons advies is om dit te gebruiken in combinatie met Material traceability. Bij het gebruik van deze twee oplossingen kunt u uw gehele goederenstroom inzichtelijk krijgen. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
         }
 
-        // H4 MT 9 punten GTT 7 t/m 11 punten   
-        if (mttpuntentelling == 9 && gttpuntentelling > 6) {
-            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is een zeer geschikte optie voor u. Dit kunt u dan gebruiken in combinatie met Global Track & Trace. Bij het gebruik van deze twee oplossingen kunt u uw producten volgen over de gehele goederenstroom. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+        // H2 MT 5 t/m 8 punten GTT 7 t/m 11 punten -> ERROR?
+        if (mttpuntentelling > 4 && gttpuntentelling > 6) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is een slimme optie voor u. Ons advies: combineer dit met SAP Logistics Business Network – Global Track & Trace. Middels deze twee oplossingen kunt u uw gehele goederenstroom inzichtelijk krijgen. Benieuwd hoe u deze (gecombineerde) oplossing inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
             document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
         }
 
+        // G1 – FC & MT (9 punten) 
+        if (fcpuntentelling == 9 && mttpuntentelling == 9) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Freight Collaboration & Material Traceability is een slimme optie voor u. Dit sluit aan bij u wensen over de contracten en facturatie. Ook kunt u hierdoor zichtbaarheid creëren voor de consument. Benieuwd hoe u deeze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        }
+
+        //D1 – FC (9 punten) & GTT (12 punten) 
+        if (fcpuntentelling == 9 && gttpuntentelling == 12) {
+            document.getElementById("Advice").innerText = "Een combinatie van SAP Logistics Business Network – Freight Collaboration + Global Track & Trace is voor u de slimste optie. U wilt zelf tracking scenario’s opstellen. Door dit te combineren met de geautomatiseerde contracten en facturatie blijft u de concurrenten voor. Benieuwd hoe u deze combinatie inricht binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        // Adviezen met drie condities --------------------------------------------------------------------------------------------
+
+
+        // F1 Geen SAP LBN FC 4 of minder punten GTT 6 of minder punten en MT 4 of minder punten/ fallback 
+        if (fcpuntentelling < 5 && gttpuntentelling < 7 && mttpuntentelling < 5) {
+            document.getElementById("Advice").innerText = "Bedankt voor het invullen van de matrix. Op basis van uw antwoorden is er niet één doorslaggevende oplossing die eruit springt. We spreken u graag persoonlijk om uw situatie samen scherp te stellen en een maatwerkadvies te geven. Neem contact op met Bart de Bijl voor een vrijblijvend adviesgesprek.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        // E2 - FC 5 tm 8 gtt 7 tm 11 mtt 5 tm 8
+        if (fcpuntentelling > 4 && gttpuntentelling > 6 && mttpuntentelling > 4) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network sluit als totaaloplossing het beste aan bij uw wensen. Zo kunt u onder andere zelf uw tracking scenario’s opstellen en inzichtelijk krijgen waar uw grondstoffen vandaan komen. Benieuwd welke voordelen het heeft voor de processen binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        // E1 Perfect score - check
+        if (fcpuntentelling == 9 && gttpuntentelling == 12 && mttpuntentelling == 9) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network sluit als totaaloplossing perfect aan bij uw wensen. U krijgt daarmee alle mogelijkheden om uw hele Supply Chain inzichtelijk te maken. De kunst is het naadloos te laten aansluiten op uw huidige IT-landschap. Benieuwd wat daarbij komt kijken? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+
+        // Adviezen met een conditie --------------------------------------------------------------------------------------------
+
+
+
+        // A2 - FC 5 tm 8
+        if (fcpuntentelling > 4 && gttpuntentelling == 0 && mttpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Freight Collaboration past het beste bij uw situatie. De reden hiervoor is omdat u hierdoor gebruik kunt maken van een geautomatiseerde contractafhandeling. De kunst is het naadloos te laten aansluiten op uw huidige IT-landschap. Benieuwd wat daarbij komt kijken? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        // A1 - FC 9 
+        if (fcpuntentelling == 9 && gttpuntentelling == 0 && mttpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Freight Collaboration is voor u een slimme optie. Waarom? Het sluit perfect aan op uw wensen voor contractafhandeling. Benieuwd hoe u het naar uw hand zet voor uw situatie? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        // B2 - GT 8 tm 11
+        if (gttpuntentelling > 7 && fcpuntentelling == 0 && mttpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace sluit het beste aan bij uw situatie. Waarom? Omdat u hierdoor totale vrijheid heeft om uw eigen scope te bepalen voor Tracken & Tracen van goederen. Benieuwd wat erbij komt kijken om die oplossing vorm te geven binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        }
+
+        // B1 - GT 12
+        if (gttpuntentelling == 12 && fcpuntentelling == 0 && mttpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Global Track & Trace is een slimme oplossing in uw situatie. U heeft daarmee de vrijheid uw eigen scope te bepalen voor Tracken & Tracen van goederen. De kunst is het naadloos te laten aansluiten op uw IT-landschap. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+        }
+
+        //C2 MT 5 t/m 8 punten 
+        if (mttpuntentelling > 4 && gttpuntentelling == 0 && fcpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network – Material Traceability is de oplossing voor u. De kunst is dit binnen uw bedrijf verder vorm te geven. Benieuwd hoe u dit aanpakt? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
+
+        //C1 – MT 9 punten 
+        if (mttpuntentelling == 9 && gttpuntentelling == 0 && fcpuntentelling == 0) {
+            document.getElementById("Advice").innerText = "SAP Logistics Business Network - Material Traceability sluit naadloos aan op uw wensen. U toont met deze oplossing aan waar uw grondstoffen vandaan komen. Benieuwd wat erbij komt kijken om die oplossing vorm te geven binnen uw bedrijf? Bel Bart de Bijl voor een brainstorm.";
+            document.getElementById("TitleAdvice").innerText = `${fcpuntentelling} voor FC, ${gttpuntentelling} voor GT, ${mttpuntentelling} voor MTT`;
+
+        }
 
 
 
@@ -489,7 +478,7 @@
             MTTPunten1: "z"
         },
         {
-            question: "4. Op welk niveau wilt u goederen in uw supply chain tracken??",
+            question: "4. Op welk niveau wilt u goederen in uw supply chain tracken?",
             answers: {
                 a: "GTT ",
                 b: "FCC",
