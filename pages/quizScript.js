@@ -1,6 +1,7 @@
 (function() {
 
-
+    var a = 0;
+    var b = 0;
     // Functions
     function buildQuiz() {
         // variable to store the HTML output
@@ -13,17 +14,57 @@
                 // variable to store the list of possible answers
                 const answers = [];
 
+
                 // and for each available answer...
                 for (letter in currentQuestion.answers) {
 
                     // ...add an HTML radio button
-                    answers.push(
-                        `<label>
-                <input type="radio"   class="x-radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
-                ${currentQuestion.answers[letter]}
-              </label>`
-                    );
+                    if (questionNumber == 0) {
+                        answers.push(
+                            `<label>
+                    <input type="checkbox"   class="x-checkbox" name="question${questionNumber}" value="${letter}">
+                    ${""} :
+                    ${currentQuestion.answers[letter]}
+                  </label>`
+                        );
+                    } else if (questionNumber == 3) {
+
+
+                        if (a == 0) {
+                            answers.push(
+                                `<label>
+                       <textarea class="form-control" style="width: 30em; height: 10em;" id="textarea-example-1" rows="3" spellcheck="false"></textarea>
+                        
+                      </label>`
+                            );
+
+                            a++
+                        }
+
+                    } else if (questionNumber == 17) {
+
+
+                        if (b == 0) {
+                            answers.push(
+                                `<label>
+                       <textarea class="form-control" style="width: 30em; height: 10em;" id="textarea-example-1" rows="3" spellcheck="false"></textarea>
+                        
+                      </label>`
+                            );
+
+                            b++
+                        }
+
+                    } else {
+                        answers.push(
+                            `<label>
+                    <input type="radio"   class="x-radio" name="question${questionNumber}" value="${letter}">
+                    ${""} :
+                    ${currentQuestion.answers[letter]}
+                  </label>`
+                        );
+                    }
+
                 }
 
                 // add this question and its answers to the output
@@ -386,6 +427,18 @@
         }
 
 
+        if (currentSlide == 17 && userAnswer == "a") {
+            showSlide(18);
+            alreadyNext = true;
+        }
+
+        if (currentSlide == 1 && userAnswer == "b") {
+            showSlide(3);
+            alreadyNext = true;
+        }
+
+
+
 
         // if (currentSlide === 4 && userAnswer === "a") {
         //     showSlide(8);
@@ -401,9 +454,9 @@
         //     alreadyNext = true;
         // }
 
-        // if (alreadyNext === false) {
-        showSlide(currentSlide + 1)
-            // }
+        if (alreadyNext === false) {
+            showSlide(currentSlide + 1)
+        }
 
     }
 
@@ -744,6 +797,7 @@
     const slides = document.querySelectorAll(".slide");
 
     let currentSlide = 0;
+    let isCheck = "radio";
 
     // Show the first slide
     showSlide(currentSlide);
