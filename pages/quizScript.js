@@ -23,7 +23,7 @@
                         answers.push(
                             `<label>
                     <input type="checkbox"   class="x-checkbox" name="question${questionNumber}" value="${letter}">
-                    ${""} :
+                    ${""} 
                     ${currentQuestion.answers[letter]}
                   </label>`
                         );
@@ -59,7 +59,7 @@
                         answers.push(
                             `<label>
                     <input type="radio"   class="x-radio" name="question${questionNumber}" value="${letter}">
-                    ${""} :
+                    ${""} 
                     ${currentQuestion.answers[letter]}
                   </label>`
                         );
