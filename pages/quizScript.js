@@ -435,15 +435,43 @@
 
 
         if (currentSlide == 17 && userAnswer == "a") {
-            showSlide(18);
+            showSlide(19);
             alreadyNext = true;
         }
 
-        if (currentSlide == 1 && userAnswer == "b") {
+        const answerContainer1 = answerContainers[1];
+        const selector1 = `input[name=question${1}]:checked`;
+        userAnswer1 = (answerContainer1.querySelector(selector1) || {}).value;
+
+        const answerContainer2 = answerContainers[11];
+        const selector2 = `input[name=question${11}]:checked`;
+        userAnswer2 = (answerContainer2.querySelector(selector2) || {}).value;
+
+        const answerContainer3 = answerContainers[16];
+        const selector3 = `input[name=question${16}]:checked`;
+        userAnswer3 = (answerContainer3.querySelector(selector3) || {}).value;
+        // alert(currentSlide);
+        // alert(userAnswer2);
+
+        if (currentSlide == 1 && userAnswer1 == "b") {
             showSlide(3);
             alreadyNext = true;
         }
 
+        if (currentSlide == 2 && userAnswer1 == "a") {
+            showSlide(4);
+            alreadyNext = true;
+        }
+
+        if (currentSlide == 11 && userAnswer2 == "c") {
+            showSlide(13);
+            alreadyNext = true;
+        }
+
+        if (currentSlide == 16 && userAnswer3 == "a") {
+            showSlide(18);
+            alreadyNext = true;
+        }
 
 
 
