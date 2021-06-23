@@ -450,6 +450,10 @@
         const answerContainer3 = answerContainers[16];
         const selector3 = `input[name=question${16}]:checked`;
         userAnswer3 = (answerContainer3.querySelector(selector3) || {}).value;
+
+        const answerContainer4 = answerContainers[18];
+        const selector4 = `input[name=question${18}]:checked`;
+        userAnswer4 = (answerContainer4.querySelector(selector4) || {}).value;
         // alert(currentSlide);
         // alert(userAnswer2);
 
@@ -470,6 +474,18 @@
 
         if (currentSlide == 16 && userAnswer3 == "a") {
             showSlide(18);
+            alreadyNext = true;
+        }
+
+        // alert(currentSlide);
+        // alert(userAnswer4);
+
+        if (currentSlide == 18 && userAnswer4 == "c") {
+            showSlide(19);
+            alreadyNext = true;
+        } else if (currentSlide == 18 && userAnswer4 != "c") {
+
+            showSlide(20);
             alreadyNext = true;
         }
 
@@ -805,11 +821,20 @@
         {
             question: "19. Hoe wil u dan vervoerders selecteren?",
             answers: {
-                a: "Eens",
-                b: "Neutraal",
-                c: "Oneens"
+                a: "Een transport opdracht uitsturen zodat vervoerders zich erop aan kunnen melde",
+                b: "Contracten afsluiten met nieuwe vervoerders"
             },
 
+
+            FCPunten3: "z",
+            FCPunten1: "z",
+            GTTPunten3: "z",
+            GTTPunten1: "z",
+            MTTPunten3: "z",
+            MTTPunten1: "z"
+        },
+        {
+            question: "Bedankt voor het invullen van de matrix!",
 
             FCPunten3: "z",
             FCPunten1: "z",
