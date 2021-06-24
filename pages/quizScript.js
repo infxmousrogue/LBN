@@ -383,6 +383,10 @@
             document.getElementById("headerTekstClass").style.display = "block";
             document.getElementById("next").setAttribute("data-toggle", "modal");
             document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
+        } else if (document.getElementById("progress").getAttribute("boolvalue") == "true" && currentSlide == 13) {
+            document.getElementById("headerTekstClass").style.display = "block";
+            document.getElementById("next").setAttribute("data-toggle", "modal");
+            document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
         } else {
             document.getElementById("headerTekstClass").style.display = "none";
             document.getElementById("next").setAttribute("data-toggle", "0");
@@ -454,8 +458,7 @@
         const answerContainer4 = answerContainers[18];
         const selector4 = `input[name=question${18}]:checked`;
         userAnswer4 = (answerContainer4.querySelector(selector4) || {}).value;
-        // alert(currentSlide);
-        // alert(userAnswer2);
+
 
         if (currentSlide == 1 && userAnswer1 == "b") {
             showSlide(3);
@@ -468,22 +471,25 @@
         }
 
         if (currentSlide == 11 && userAnswer2 == "c") {
+            document.getElementById("progress").setAttribute("boolvalue", "true");
             showSlide(13);
             alreadyNext = true;
         }
 
         if (currentSlide == 16 && userAnswer3 == "a") {
+
             showSlide(18);
             alreadyNext = true;
         }
 
-        // alert(currentSlide);
-        // alert(userAnswer4);
 
         if (currentSlide == 18 && userAnswer4 == "c") {
+
             showSlide(19);
             alreadyNext = true;
-        } else if (currentSlide == 18 && userAnswer4 != "c") {
+        }
+
+        if (currentSlide == 18 && userAnswer4 == "b") {
 
             showSlide(20);
             alreadyNext = true;
@@ -491,19 +497,7 @@
 
 
 
-        // if (currentSlide === 4 && userAnswer === "a") {
-        //     showSlide(8);
 
-        //     alreadyNext = true;
-        // }
-
-        // if (currentSlide === 11 && userAnswer === "c") {
-        //     showSlide(13);
-        //     alreadyNext = true;
-        // } else if (currentSlide === 11) {
-        //     showSlide(12);
-        //     alreadyNext = true;
-        // }
 
         if (alreadyNext === false) {
             showSlide(currentSlide + 1)
