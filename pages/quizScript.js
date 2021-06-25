@@ -383,11 +383,14 @@
             document.getElementById("headerTekstClass").style.display = "block";
             document.getElementById("next").setAttribute("data-toggle", "modal");
             document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
-        } else if (document.getElementById("progress").getAttribute("boolvalue") == "true" && currentSlide == 13) {
-            document.getElementById("headerTekstClass").style.display = "block";
-            document.getElementById("next").setAttribute("data-toggle", "modal");
-            document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
-        } else {
+        }
+        // } else if (document.getElementById("progress").getAttribute("boolvalue") == "true" && currentSlide == 13) {
+        //     document.getElementById("headerTekstClass").style.display = "block";
+        //     document.getElementById("next").setAttribute("data-toggle", "modal");
+        //     document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
+        // } 
+        
+        else {
             document.getElementById("headerTekstClass").style.display = "none";
             document.getElementById("next").setAttribute("data-toggle", "0");
             document.getElementById("next").setAttribute("data-target", "0");
@@ -420,7 +423,9 @@
         }
 
 
-        if (currentSlide > 11) {
+        if (currentSlide > 11  ) {
+
+           
             document.getElementById("fotobox1").setAttribute("src", "pages/img/Foto vraag 14.png");
             document.getElementById("fotobox").setAttribute("href", "pages/img/Foto vraag 14.png");
 
@@ -472,7 +477,21 @@
 
         if (currentSlide == 11 && userAnswer2 == "c") {
             document.getElementById("progress").setAttribute("boolvalue", "true");
+            document.getElementById("fotobox1").setAttribute("src", "pages/img/Foto vraag 14.png");
+            document.getElementById("fotobox").setAttribute("href", "pages/img/Foto vraag 14.png");
+
+            document.getElementById("headerTekstClass").innerText = "Material Traceability";
+            document.getElementById("process").innerText = "Material Traceability";
+            document.getElementById("headerTekst").innerText = "De derde en laatste optie van SAP LBN is Material Traceability. Deze optie zorgt voor het delen van data over de gehele supply chain. Hiermee kan je bijvoorbeeld aantonen dat een vis in een duurzame omgeving gevangen is.";
+            process.style.display = "inline-block";
+            headerTekst.style.direction = "block";
+            document.getElementById("headerTekstClass").style.display = "block";
+            document.getElementById("next").setAttribute("data-toggle", "modal");
+            document.getElementById("next").setAttribute("data-target", "#exampleModalLong");
+            
             showSlide(13);
+
+            
             alreadyNext = true;
         }
 
@@ -482,6 +501,12 @@
             alreadyNext = true;
         }
 
+
+        if (currentSlide == 18 && userAnswer4 == "a") {
+
+            showSlide(20);
+            alreadyNext = true;
+        }
 
         if (currentSlide == 18 && userAnswer4 == "c") {
 
