@@ -603,9 +603,9 @@
         {
             question: "4. Op welk niveau wilt u goederen in uw supply chain tracken?",
             answers: {
-                a: "GTT ",
-                b: "FCC",
-                c: "FC"
+                a: "Global Track & Trace",
+                b: "Freight Collaboration",
+                c: "Material Tracebility"
             },
             FCPunten3: "z",
             FCPunten1: "z",
