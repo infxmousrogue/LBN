@@ -575,7 +575,7 @@
             answers: {
                 a: "Transportation Management Basic ",
                 b: "Transportation Management Advanced ",
-                c: "SAP ECC ",
+                c: "SAP ECC",
                 d: "SAP S/4HANA "
             },
             FCPunten3: "z",
@@ -590,7 +590,7 @@
             answers: {
                 a: "Transportation Management Basic ",
                 b: "Transportation Management Advanced ",
-                c: "SAP ECC ",
+                c: "SAP ECC",
                 d: "SAP S/4HANA "
             },
             FCPunten3: "z",
@@ -603,9 +603,9 @@
         {
             question: "4. Op welk niveau wilt u goederen in uw supply chain tracken?",
             answers: {
-                a: "Global Track & Trace",
-                b: "Freight Collaboration",
-                c: "Material Tracebility"
+                a: "Ik wil milestones updates ontvangen die plaatsvinden in de Supply Chain",
+                b: "Ik wil alleen Ocean en Road transport volgen",
+                c: "Ik wil, naast Ocean en Road transport, ook andere vormen van transport kunnen volgen"
             },
             FCPunten3: "z",
             FCPunten1: "z",
