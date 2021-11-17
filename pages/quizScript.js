@@ -327,6 +327,7 @@
         }
 
 
+        document.getElementById("TitleAdvice").innerText = ""
 
 
     }
